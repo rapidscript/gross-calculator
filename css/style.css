@@ -1,6 +1,12 @@
 h1 {
+    color: white;
     text-align: center;
     margin-top: 2em;
+    
+}
+
+body{
+    background-color: darkgray;
 }
 form {
     background-color: beige;
@@ -29,6 +35,7 @@ div {
     border: 1px black solid;
     width: 31em;
     margin: auto;
+    background-color: beige;
 }
 form + div {
     text-align: center;
