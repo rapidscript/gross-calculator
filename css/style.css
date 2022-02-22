@@ -1,9 +1,13 @@
+body {
+    background-color: rgb(24, 22, 22);
+}
 h1 {
     text-align: center;
     margin-top: 2em;
+    color: azure;
 }
 form {
-    background-color: beige;
+    background-color: grey;
     padding: 2em;
     height: 5.5em;
     margin: auto;
@@ -26,7 +30,7 @@ form input[type=button] {
     height: 2.2em;
 }
 div {
-    border: 1px black solid;
+    border: 1px lightgray solid;
     width: 31em;
     margin: auto;
 }
