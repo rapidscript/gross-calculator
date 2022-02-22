@@ -41,3 +41,12 @@ form + div {
 div > span {
     color: red;
 }
+
+/* Change the theme of the website from a light theme to a dark theme*/
+.dark-mode{
+    background-color: black;
+    color:white;
+   
+    
+
+}
