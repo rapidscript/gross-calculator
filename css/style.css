@@ -1,7 +1,16 @@
+body {
+    background-color: #333;
+}
+#answer-section {
+    color: beige;
+}
+
 h1 {
     text-align: center;
     margin-top: 2em;
+    color: beige;
 }
+
 form {
     background-color: beige;
     padding: 2em;
