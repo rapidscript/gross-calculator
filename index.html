@@ -4,25 +4,67 @@
         <meta charset="utf-8">
         <title>Home | Gross Calculator</title>
         <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <script>
+            function calculateGrossSalary() {
+                var base = document.getElementById("basesalary").value;
+                var bonus = 1000;
+
+                var gross = base + 1000;
+                
+
+                if (gross != null) {
+                document.getElementById("answer").innerHTML = gross;
+                }
+            }
+
+            function myLoans(){
+                var base = document.getElementById("basesalary").value;
+                if (base < 1000) {
+                document.getElementById("loan").innerHTML = 0;
+                }
+                else
+                   document.getElementById("loan").innerHTML = 10000;
+            }
+        </script>
         <h1>Gross Salary Calculator</h1>
         <div>
             <form>
                 <label>
                     <span>Base Salary:</span>
-                    <input id="basesalary" type="text" placeholder="Enter base salary"/>
+                    <input id="basesalary" type="number" placeholder="Enter base salary"/>
                 </label>
                 
                 <label>
                     <span> </span>
-                    <input type="button" value="Calculate gross salary"/>
+                    <input onclick="calculateGrossSalary()"  type="button" value="Calculate gross salary"/>
                 </label>
             </form>
 
             <div>
                 Gross salary is: <span id="answer"></span>
             </div>
+
         </div>
+
+        <div>
+            <label>
+                <span>Base Salary:</span>
+                <input id="basesalary" type="text" placeholder="Enter base salary"/>
+            </label>
+            <label>
+                <span> </span>
+                <input onclick="myLoans()"  type="button" value="Calculate Loan Limit"/>
+            </label>
+
+            <div>
+                Loan Limit is: <span id="loan"></span>
+            </div>
+        </div>
+
+<!-- gross salary= base +ot + benefits+ bonuses-->
     </body>
 </html>
+
