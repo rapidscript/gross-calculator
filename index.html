@@ -11,18 +11,25 @@
             <form>
                 <label>
                     <span>Base Salary:</span>
-                    <input id="basesalary" type="text" placeholder="Enter base salary"/>
+                    <input id="basesalary" type="texts" placeholder="Enter base salary" id ="base_salary"/>
                 </label>
                 
                 <label>
                     <span> </span>
-                    <input type="button" value="Calculate gross salary"/>
+                    <input type="button" value="Calculate gross salary" onclick="display_sal()"/>
                 </label>
             </form>
 
             <div>
-                Gross salary is: <span id="answer"></span>
+                Gross salary is: <textarea id="output" name="diplay" cols="30" rows="1"></textarea>
+                
             </div>
         </div>
+        <script>
+            function display_sal(){
+                var base_sal = parseInt(document.getElementById("base_salary"));
+                document.getElementById("output").value = base_sal;
+            };
+        </script>
     </body>
 </html>
