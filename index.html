@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Home | Gross Calculator</title>
         <link rel="stylesheet" href="css/style.css"/>
+        <script src="javascript/main.js"></script>
     </head>
     <body>
         <h1>Gross Salary Calculator</h1>
@@ -16,12 +17,19 @@
                 
                 <label>
                     <span> </span>
-                    <input type="button" value="Calculate gross salary"/>
+                    <input onclick="calculateGrossSalary()"  type="button" value="Calculate gross salary"/>
                 </label>
             </form>
 
             <div>
                 Gross salary is: <span id="answer"></span>
+            </div>
+            <!--Added a Button-->
+            <div class="darktheme">
+                <label>
+                    <span> </span>
+                    <input onclick="darktheme()"  type="button" value="Dark Theme"/>
+                </label>
             </div>
         </div>
     </body>
