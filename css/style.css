@@ -1,9 +1,14 @@
+body{
+    background-color: #1A1E1E;
+}
+
 h1 {
     text-align: center;
     margin-top: 2em;
+    color: #ffff;
 }
 form {
-    background-color: beige;
+    background-color: #1A1E1E;
     padding: 2em;
     height: 5.5em;
     margin: auto;
@@ -11,6 +16,7 @@ form {
 form label {
     display: block;
     margin: 0px 0px 15px 0px;
+    color: #fff;
 }
 form label > span {
     width: 25%;
