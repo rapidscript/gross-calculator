@@ -1,43 +1,57 @@
+body {
+    background-color: black;
+}
+
 h1 {
     text-align: center;
     margin-top: 2em;
+    color: white;
 }
+
 form {
-    background-color: beige;
+    background-color: #D8ADFF;
     padding: 2em;
     height: 5.5em;
     margin: auto;
 }
+
 form label {
     display: block;
     margin: 0px 0px 15px 0px;
 }
-form label > span {
+
+form label>span {
     width: 25%;
     float: left;
     padding-left: 5%;
+    color: white;
 }
+
 form input[type=text] {
     width: 60%;
 }
+
 form input[type=button] {
     float: right;
     margin-right: 9%;
     height: 2.2em;
 }
+
 div {
-    border: 1px black solid;
+    border: 1px white solid;
     width: 31em;
     margin: auto;
 }
-form + div {
+
+form+div {
     text-align: center;
     padding-top: 2em;
     padding-bottom: 2em;
     border-right: none;
     border-left: none;
-    color: green;
+    color: #A10839;
 }
-div > span {
-    color: red;
+
+div>span {
+    color: white;
 }
